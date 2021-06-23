@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HealthRight</string>
+    <string name="welcome_back">Hi Sumanyu, Welcome Back!</string>
+    <string name="step_counter">STEP COUNTER</string>
+    <string name="work_on_your_fitness">WORK ON YOUR FITNESS</string>
+    <string name="shop">SHOP</string>
+    <string name="your_step_counter_is_running">YOUR STEP COUNTER IS RUNNING</string>
+    <string name="age_group_50_70">AGE GROUP 50–70</string>
+    <string name="age_group_70_above">AGE GROUP 70 above</string>
+
+
+</resources>
