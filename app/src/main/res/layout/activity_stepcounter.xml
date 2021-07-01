@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".Stepcounter">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/main_icon" />
+
     <com.mikhaellopez.circularprogressbar.CircularProgressBar
         android:id="@+id/circularProgressBar"
         android:layout_width="wrap_content"
@@ -34,5 +39,11 @@
         android:layout_centerHorizontal="true"
         android:padding="10dp"
         android:text="@string/your_step_counter_is_running" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_icon" />
 
 </RelativeLayout>

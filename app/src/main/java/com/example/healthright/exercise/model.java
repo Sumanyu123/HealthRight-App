@@ -1,4 +1,4 @@
-package com.example.healthright;
+package com.example.healthright.exercise;
 
 public class model {
     private String name;

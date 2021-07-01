@@ -8,6 +8,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.mikhaellopez.circularprogressbar.CircularProgressBar;
@@ -22,8 +23,12 @@ public class Stepcounter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_stepcounter);
+        //to keep screen ON:-
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
+        //counter declarations-
         counter = (TextView) findViewById(R.id.counter);
         SensorManager sensormanager = (SensorManager) getSystemService(SENSOR_SERVICE);
         Sensor sensor = sensormanager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);

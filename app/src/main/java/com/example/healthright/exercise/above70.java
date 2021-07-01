@@ -1,22 +1,27 @@
-package com.example.healthright;
+package com.example.healthright.exercise;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.WindowManager;
+
+import com.example.healthright.R;
 
 import java.util.ArrayList;
 
 public class above70 extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    adapter adapter;
+    com.example.healthright.exercise.adapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_above70);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         recyclerView = (RecyclerView) findViewById(R.id.RecyclerViewA);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
